@@ -176,9 +176,10 @@ table tr{
     background-color:#36a9e3;
 }
 table tr td:last-child{
+    margin-bottom:0;
     width: 153px ;
-    padding: 0;
     height: 153px;
+    padding: 0;
     margin-right: 0;
     background-color:#36a9e3;
 }
@@ -337,12 +338,15 @@ footer a{
     .container{
         flex-direction: column;
     }
+    #banner{
+        margin-bottom:200px;
+    }
     section .widget{
-        margin-top:200px;
+        margin-top:20px;
     }
     #geral section,
     #geral aside{
-        padding: 20px;
+        padding: 0px 20px 0px 20px;
     }
     .footer-menu{
         flex-direction: column;
@@ -369,5 +373,16 @@ footer a{
         display: flex;
         flex-direction: column;
         justify-content:space-around;
+    }
+    table tr{
+        display: flex;     
+        margin-bottom:10px;
+        width: 100%;
+    }
+    table tr td{
+        padding: 0; 
+        width: 130px;
+        height: 130px;
+        background-color:#36a9e3;
     }
 }
